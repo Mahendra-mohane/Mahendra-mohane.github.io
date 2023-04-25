@@ -1,3 +1,4 @@
+(function() {
 let i=0;
 let txt="Full Stack Web Developer Focused on NodeJS Backend."; //Developer.//
 let speed=120;
@@ -62,4 +63,4 @@ window.open("./images/Mahendra-Mohane-Resume.pdf");
     document.getElementById("mySidebar").style.width = "0";
     document.getElementById("main").style.display= "block";
   }
-  
+})();
