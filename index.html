@@ -5,346 +5,287 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mahendra-Mohane-Portfolio</title>
+    <title>Mahendra</title>
+    <link 
+        rel="icon"
+        type="images/png"
+        href = "./images/r-low-resolution-logo-color-on-transparent-background.png"
+    >
+    <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+
     <script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js">
+
     </script>
-
-    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
-
 </head>
-
 <body>
 
-    <!-- ////Hamburger////// -->
+    <!-- navbar -->
 
-    <div id="mySidebar" class="sidebar">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-        <div>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-            <a href="./images/Mahendra-Mohane-Resume.pdf" download>Resume <i class="fa fa-download"></i></a>
+    <nav id="nav-menu">
+
+        <a href="#" class="logo"> { Dev <span>MDM</span> }</a>
+
+        <ul class="navlist">
+        <li><a href="#home" class="nav-link home">Home</a></li>
+        <li><a href="#about" class="nav-link about">About</a></li>
+        <li><a href="#skills" class="nav-link skills">Skills</a></li>
+        <li><a href="#projects" class="nav-link projects">Projects</a></li>
+        <li><a href="#stats" class="nav-link stats">Stats</a></li>
+        <li><a href="#contact" class="nav-link contact">Contact</a></li>
+        <li><button id="resume-button-1"><a href="./images/Mahendra-Mohane-Resume.pdf" class="nav-link resume" id="resume-link-1" target="_blank" download>Resume </a></button> </li>
+        </ul>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+  </nav>
+    
+  <!-- home section -->
+  <section class="homecls" id="home">
+    <div class="home-text">
+        <div class="slide">
+            <span class="one">Hello</span>
+            <span class="two">I'm</span>
+        </div>
+        <h1 id="user-detail-name">Mahendra</h1>
+        <h3>Node JS<span> Backend Developer</span></h3>
+        <p>Aspiring Node JS Backend Developer at Masai School, Life Long Learner.</p>
+        <div class="list" id="list1">
+            <li><a href="https://github.com/Mahendra-mohane" target="_blank" id="contact-github"><i class='bx bxl-github' ></i></a></li>
+            <li><a href="https://www.linkedin.com/in/mahendra-mohane/" target="_blank" id="contact-linkedin"> <i class='bx bxl-linkedin' ></i></a></li>
+            <button id="resume-button-2" ><a href="./images/Mahendra-Mohane-Resume.pdf" class="nav-link resume" id="resume-link-2" target="_blank" download>Resume</a></button>
         </div>
     </div>
-    <div id="main">
-        <button class="openbtn" onclick="openNav()">☰</button>
+  </section> 
 
-    </div>
-
-    <!-- //////////////////////////////////////// -->
-
-    <!-- /////NavBAR//////////////////////////// -->
-
-    <div id="nav-menu">
-        <p class="name">
-            < Mahendra Mohane />
-        </p>
-        <div>
-            <a href="#home" class="nav-link home">Home</a>
-            <a href="#about" class="nav-link about">About</a>
-            <a href="#skills" class="nav-link skills">Skills</a>
-            <a href="#projects" class="nav-link projects">Projects</a>
-            <a href="#contact" class="nav-link contact">Contact</a>
-            <a href="./images/Mahendra-Mohane-Resume.pdf" class="nav-link resume" id="resume-button-1" download>Resume
-                <i class="fa fa-download"></i></a>
-
+  <!-- about PAGE HERE  -->
+  <section class="about section" id="about">
+        <div class="about-img">
+            <img class="home-img" src="./images/prof2.png" alt="">
         </div>
-    </div>
 
-    <main>
-
-        <!-- /////////////HOME/////////////////////// -->
-
-        <div id="width">
-
-            <div id="home">
-                <div>
-                    <h1>👋 Hi, my name is</h1>
-                    <p id="user-detail-name">Mahendra Mohane</p>
-                    <h1 id="demo"><span> I'm a </span><span id="demo1"></span> </h1>
+        <div class="about-text">
+            <h2>About <span>Me</span></h2>
+            <div class="wrapper">
+                <h3 class="static-txt"> I'm a</h3>
+                <div class="dynamic-txt">
+                    <h5>Full-Stack Web Developer</h>
+                    <h4>Full-Stack Web Developer</h4>
+                    <h4>Node JS Backend Developer</h4>
+                    <h4>Coder</h4>
                 </div>
-
-                <img class="home-img" src="./images/mahendra-mohane.png" alt="">
-
             </div>
+            <p id="user-detail-intro">A passionate NodeJS developer with extensive experience in Node.js has completed a 7-month full-stack web development program at Masai School. During this time, have gained over 1200 hours of hands-on coding experience and developed a strong understanding of various web technologies, including JavaScript, Node.js, Express.js, MongoDB, WebSockets, Redis, MySQL, Typescript and AWS. Always eager to learn new tools and tech stacks and committed to delivering high-quality solutions to clients. With these skills and expertise, excited to to develop innovative and efficient web applications.</p>
+            <a href="https://github.com/Mahendra-mohane" target="_blank" class="btn">More About</a>
+        </div>
+  </section>
+
+  <!-- skills -->
+  <section id="skills" class="skills">
+    <div class="main-text">
+        <h4>What I am Expert In?</h4>
+        <h2><span>My</span> Skills</h2>
+    </div>
+
+    <hr>
+
+    <div class="allSkills">
+        <div class="skills-card">
+            <img class="skills-card-img" src="./images/html2-removebg-preview.png" alt="err">
+            <p class="skills-card-name">HTML</p>
+        </div>
+
+        <div class="skills-card">
+            <img class="skills-card-img" src="./images/css2-removebg-preview.png" alt="err">
+            <p class="skills-card-name">CSS</p>
+        </div>
+
+        <div class="skills-card">
+            <img class="skills-card-img" src="./images/js.png" alt="err">
+            <p class="skills-card-name">JavaScript</p>
+        </div>
+
+        <div class="skills-card">
+            <img class="skills-card-img" src="./images/nodejs-removebg-preview.png" alt="err">
+            <p class="skills-card-name">Node.js</p>
+        </div>
+
+        <div class="skills-card">
+            <img class="skills-card-img" src="./images/expressjs-removebg-preview.png" alt="err">
+            <p class="skills-card-name">Express.js</p>
+        </div>
+
+        <div class="skills-card">
+            <img class="skills-card-img" src="./images/mongo-removebg-preview.png" alt="err">
+            <p class="skills-card-name">MongoDB</p>
+        </div>
+
+        <div class="skills-card">
+            <img class="skills-card-img" src="./images/npm-removebg-preview.png" alt="err">
+            <p class="skills-card-name">NPM</p>
+        </div>
+
+        <div class="skills-card">
+            <img class="skills-card-img" src="./images/git-removebg-preview.png" alt="err">
+            <p class="skills-card-name">git</p>
+        </div>
+
+        <div class="skills-card">
+            <img class="skills-card-img" src="./images/socketio-removebg-preview.png" alt="err">
+            <p class="skills-card-name">Socket.io</p>
+        </div>
+
+        <div class="skills-card">
+            <img class="skills-card-img" src="./images/redis-removebg-preview.png" alt="err">
+            <p class="skills-card-name">Redis</p>
+        </div>
+
+        <div class="skills-card">
+            <img class="skills-card-img" src="./images/aws-removebg-preview.png" alt="err">
+            <p class="skills-card-name">aws</p>
+        </div>
+
+        <div class="skills-card">
+            <img class="skills-card-img" src="./images/tailwind-removebg-preview.png" alt="err">
+            <p class="skills-card-name">Tailwind css</p>
+        </div>
+
+        <div class="skills-card">
+            <img class="skills-card-img" src="./images/mysql-removebg-preview.png" alt="err">
+            <p class="skills-card-name">MySQL</p>
+        </div>
 
 
 
+    </div>
 
-            <!-- ////////////////////About Section/////////////////// -->
+  </section>
 
+  <!-- MY projects -->
+  <section class="projects" id="projects">
+    <div class="main-text">
+        <h4>What are my latest projects?</h4>
+        <h2><span>My</span> Projects</h2>
+    </div>
 
-            <div id="about" class="about section">
+    <hr>
 
-                <h2 class="mid">About</h2>
-                <hr>
-                <p id="user-detail-intro">Hello! My name is Mahendra Mohane. I  am Motivated and dedicated full-stack web developer with a focus on Node.js, experienced in developing web applications from scratch.Proficient in using various programming languages such as JavaScript,HTML, CSS, and libraries such as Express, and MongoDB.
-                I am also extremely interested in creating elegant solutions, more specifically on System Design and High performning solutions.
+    <div class="allprojects">
+        <div class="project-card">
+            <img src="./images/projects_imgs/index.png" alt="err">
+            <div class="layer">
+                <h5 class="project-title"> ChessMate</h5>
+                <p class="project-description"> ChessMate is a real-time multiplayer chess application with real-time video and chating features</p>
+                <div class="project-tech-stack">
+                    <h5>Tech stack used</h5>  
+                    <p>HTML <span>|</span>  CSS <span>|</span>  JavaScript <span>|</span> Node.js <span>|</span>  Express.js <span>|</span> MongoDB <span>|</span> 
+                        Redis <span>|</span> WebRTC <span>|</span> Socket.io  <span>|</span> OAuth2.0 <span>|</span> SendGrid <span>|</span> JWT  <span>|</span> ChessEngine</p>
+                </div>
+                <div class="adiv">
+                    <a href="https://github.com/Mahendra-mohane/ossified-nerve-3185" target="_blank" id="btnproj1_1" class="project-github-link"><i class='bx bxl-github' ></i></a>
+                    <a href="https://chessly.netlify.app/" target="_blank" id="btnproj1_2" class="project-deployed-link"> <i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="./images/projects_imgs/prepai.JPG" alt="err">
+            <div class="layer">
+                <h5 class="project-title"> HackSquadApp</h5>
+                <p class="project-description"> HackSquadApp is an AI-powered self-interview preparation platform where job seekers and interviewees can practice and receive valuable feedback to enhance their skills.
                 </p>
-
-                <div id="aboutflex">
-                    <a href="./images/Mahendra-Mohane-Resume.pdf" id="resume-button-2" download>Resume <i
-                            class="fa fa-download"></i></a>
-
-                    <div id="con">
-
-                        <a target="_blank" href="https://www.linkedin.com/in/mahendra-mohane-2b3342123/"><img
-                                src="images\linkdin.png" alt=""></a>
-                        <a target="_blank" href="https://github.com/Mahendra-mohane"> <img
-                                src="images\github.png"
-                                alt=""></a>
-                        <a target="_blank" href="itsmahendramohane11@gmail.com"><img
-                                src="images\email.png"
-                                alt=""></a>
-                    </div>
-
+                <div class="project-tech-stack">
+                    <h5>Tech stack used</h5>  
+                    <p>React <span>|</span>  Tailwind CSS <span>|</span>  JavaScript <span>|</span> Node.js <span>|</span>  Express.js <span>|</span> MongoDB <span>|</span>OpenAI api <span>|</span> JWT </p>
+                </div>
+                <div class="adiv">
+                    <a href="https://github.com/Mahendra-mohane/HackSquadApp" target="_blank" id="btnproj1_1" class="project-github-link"><i class='bx bxl-github' ></i></a>
+                    <a href="https://prepai.netlify.app/" target="_blank" id="btnproj1_2" class="project-deployed-link"> <i class='bx bx-link-external'></i></a>
                 </div>
             </div>
-            <!-- ************************************************SKILLS****************************************************************** -->
-            <div id="skills">
-                <h2 class="mid">Skills</h2>
-                <hr>
-                <div id="grid">
-
-                    <div class="skills-card">
-                        <img class="skills-card-img"
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="">
-                        <p class="skills-card-name">HTML</p>
-                    </div>
-                    <div class="skills-card">
-                        <img class="skills-card-img"
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="">
-                        <p class="skills-card-name">CSS</p>
-                    </div>
-                    <div class="skills-card">
-                        <img class="skills-card-img"
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                            alt="">
-                        <p class="skills-card-name">JavaScript</p>
-                    </div>
-                    <div class="skills-card">
-                        <img class="skills-card-img" src="https://chiranjeev-thapliyal.vercel.app/svg/nodejs.svg"
-                            alt="">
-                        <p class="skills-card-name">NodeJS</p>
-                    </div>
-                    <div class="skills-card">
-                        <img class="skills-card-img" src="https://rohithanss.github.io/skills/expressJs.png" alt="">
-                        <p class="skills-card-name">ExpressJS</p>
-                    </div>
-                    <div class="skills-card">
-                        <img class="skills-card-img" src="https://chiranjeev-thapliyal.vercel.app/svg/mongodb.svg"
-                            alt="">
-                        <p class="skills-card-name">MongoDB</p>
-                    </div>
-                    <div class="skills-card">
-                        <img class="skills-card-img"
-                            src="https://assets.stickpng.com/thumbs/584830b5cef1014c0b5e4a9c.png" alt="">
-
-                        <p class="skills-card-name">Redis</p>
-                    </div>
-                    <div class="skills-card">
-                        <img class="skills-card-img" src="https://chiranjeev-thapliyal.vercel.app/svg/git.svg" alt="">
-                        <p class="skills-card-name">Git</p>
-                    </div>
-                    <div class="skills-card">
-                        <img class="skills-card-img"
-                            src="C:\Users\Surendra\Desktop\ShradhaVastrakar.github.io-master\images\github.png"
-                            alt="">
-                        <p class="skills-card-name">Github</p>
-                    </div>
-                    <div class="skills-card">
-                        <img class="skills-card-img"
-                            src="images\vs1code.png"
-                            alt="">
-                        <p class="skills-card-name">Vs Code</p>
-                    </div>
-                    <div class="skills-card">
-                        <img class="skills-card-img"
-                            src="images\postman.png"
-                            alt="">
-                        <p class="skills-card-name">Postman</p>
-                    </div>
-
-                </div>
-            </div>
-
-
-
-
-            <!-- ***********PROJECTS******* -->
-
-
-
-
-            <!-- ***project-1 start here*** -->
-
-            <div id="projects">
-
-                <h2 class="mid">Projects</h2>
-                <hr>
-                <div>
-
-                    <div class="project-card">
-
-                        <img src="images\foodie-finders.png" alt="">
-                        <p class="project-title">Chick-fil-A Website</p>
-                        <div class="project-description">
-                            <p> <b> Chick-fil-A </b>It is an online platform where users can place Orders for different fooditems .including Salads, Pizzas,Sandwiches,Coffee and Drinks. </p>
-                            <p><b> Features : </b> Home page, product page, Account page
-                                Log-In, Sign-Up,Sorting
-                                CRUD, Cart page
-                                Checkout,Thanks page and Payment page</p>
-                        </div>
-                        <div class="techstack">
-                            <p><b>Tech Stack : </b> </p>
-                            <p class="project-tech-stack">HTML,CSS, JavaScript.</p>
-                        </div>
-                        <div class="projectlinks">
-                            <br>
-                            <a target="_blank" href="https://github.com/Mahendra-mohane/dark-van-7997"
-                                class="project-github-link">Github</a>
-                            <a target="_blank" href="https://dark-van-7997-foodie-finder-abdul.netlify.app/"
-                                class="project-deployed-link">Deployed</a>
-                        </div>
-                    </div>
-
-
-<!-- ********project-2 starts here********* -->
-
-                    <div class="project-card">
-                        <img src="images\fashion-clubs.png" alt="">
-                        <p class="project-title">Fashion Club</p>
-                        <div class="project-description">
-                            <p> <b>Fashion Club</b> Fashion Club is an online consumer shopping platform.</p>
-                            <p><b> Features : </b>Home page, product page, Account page
-                                Log-In, Sign-Up,
-                                Checkout and Payment, CRUD,
-                                 Cart page
-                                Checkout page, Payment page and Thanks Page
-                                </p>
-                        </div>
-                        <div class="techstack">
-                            <p><b>Tech Stack : </b> </p>
-                            <p class="project-tech-stack"> HTML, CSS, JavaScript, Node.js,MongoDB,Express,APIs</p>
-
-                        </div>
-                        <div class="projectlinks">
-                            <br>
-                            <a target="_blank" href="https://github.com/Mahendra-mohane/snugly-lip-3676" class="project-github-link">Github</a>
-                            <a target="_blank" href="https://cheerful-pithivier-bf6d53.netlify.app/"
-                                class="project-deployed-link">Deployed</a>
-                        </div>
-                    </div>
-
-
-
-                    <!-- **project-3 start** -->
-
-                    <div class="project-card">
-                        <img src="images\apna-food.png" alt="">
-                        <p class="project-title">Apna Food</p>
-                        <div class="project-description">
-                            <p> <b>Apna Food</b> Apna Food allow users  to Visit Food menu such as Breakfast,Carrot,Soft Drinks from our website.</p>
-                            <p><b> Features : </b>Home page,
-                              About as page, Contact page.                              
-                                </p>
-                        </div>
-                        <div class="techstack">
-                            <p><b>Tech Stack : </b> </p>
-                            <p class="project-tech-stack"> HTML, CSS, JavaScript</p>
-
-                        </div>
-                        <div class="projectlinks">
-                            <br>
-                            <a target="_blank" href="https://github.com/Mahendra-mohane/Apna-food" class="project-github-link">Github</a>
-                            <a target="_blank" href="https://prismatic-nasturtium-bc4639.netlify.app/"
-                                class="project-deployed-link">Deployed</a>
-                        </div>
-                    </div>
-
-                    <!-- *project-4 start* -->
-
-                    <div class="project-card">
-                        <img src="images\army-fitness.png" alt="">
-                        <p class="project-title">Army fitness</p>
-                        <div class="project-description">
-                            <p> <b>Army fitness</b> The  website offers an registration for women's and  men's of Defence sectors .</p>
-                            <p><b> Features : </b>Home page, Registartion page, 
-                        
-                                </p>
-                        </div>
-                        <div class="techstack">
-                            <p><b>Tech Stack : </b> </p>
-                            <p class="project-tech-stack"> HTML, CSS.</p>
-
-                        </div>
-                        <div class="projectlinks">
-                            <br>
-                            <a target="_blank" href="https://github.com/Mahendra-mohane/Indian-army-fitness" class="project-github-link">Github</a>
-                            <a target="_blank" href="https://moonlit-capybara-50e518.netlify.app/"
-                                class="project-deployed-link">Deployed</a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-
-        <!-- *********GIT HUB SECTION******** -->
-        <div id="stats">
-            <h2 class="mid">Github Stats</h2>
-            <hr>
-        <div>
-        <img  id="github-top-langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mahendra-mohane&theme=radical&hide_border=false&include_all_commits=false&count_private=false&layout=compact" alt="">
-        
-        <div id="statsimg">
-        <img id="github-stats-card" src="https://github-readme-stats.vercel.app/api?username=Mahendra-mohane&theme=radical&hide_border=false&include_all_commits=false&count_private=false" alt="">
-        <img  id="github-streak-stats" src="https://github-readme-streak-stats.herokuapp.com/?user=Mahendra-mohane&theme=radical&hide_border=false" alt="">
         </div>
-        
+    </div>
+  </section>
+
+
+  <!----stats section-------->
+
+   <section class="stats" id="stats">
+        <div class="main-text" id="main-text">
+            <h4>Want to know my GitHub Statistics?</h4>
+            <h2><span>My</span> GitHub Stats</h2>
         </div>
-           </div>
-        
-           <div id="calendar">
-            <h2 class="mid">Github Calendar</h2>
-            <hr>
-            <div  class="react-activity-calendar calendar">
+
+        <hr>
+
+        <div id="gitdata_cont">
+            <div>
+                <img  id="github-top-langs" src="https://github-readme-stats.vercel.app/api/top-langs?username=Mahendra-mohane&show_icons=true&locale=en&layout=compact" alt="">
+            </div>
+                
+            <div id="statsimg">
+                <img id="github-stats-card" src="https://github-readme-stats.vercel.app/api?username=Mahendra-mohane&show_icons=true&locale=en" alt="">
+                <img  id="github-streak-stats" src="https://github-readme-streak-stats.herokuapp.com/?user=Mahendra-mohane" alt="">
+            </div>
+        </div>
+        <div id="calendar">
+            <h2 class="mid"> Git<span>Hub</span> Calendar</h2>
+            
+            <div  class="react-activity-calendar calendar" id="gitcal">
                 <!-- Loading stuff -->
                 Loading the data just for you.
             </div>
-            
         </div>
+    
+    </section>
 
-            <!-- *****************************************CONTACTS************************************************* -->
-            <div id="contact">
+  <!-- contact  -->
 
-                <h2 class="mid">Contact</h2>
-                <hr>
-             
-                 
-                <div class="contactflex">
-                 
-                  <a target="_blank" id="contact-github" href="https://github.com/Mahendra-mohane"><p>  <i class="fa fa-github"></i> Github</p></a>
-                </div>
-                <div class="contactflex">
-                 
-                   <a target="_blank"  id="contact-linkedin" href="https://www.linkedin.com/in/mahendra-mohane-2b3342123/"><p> <i class="fa fa-linkedin"></i> Linkedin</p></a>
-                </div>
-                <div class="contactflex">
-                 
-                 <a href=""> <p id="contact-phone"><i class="fa fa-phone"></i>+919630806228</p></a>
-                </div>
-                <div class="contactflex">  
-                     <a target="_blank"  id="contact-email"><p><i class="fa fa-envelope"></i>itsmahendramohane11@gmail.com</p></a>
-                </div>
-                <p class="name">Mahendra Mohane/></p> 
-               </div>
-    </main>
+  <section class="contacts" id="contact">
+    <div class="contact-text">
+        <h2>Contact <span>Me!</span></h2>
+        <h4>Are you in need of a talented full-stack web developer who specializes in Node.js backend development? Look no further Just contact me!</h4>
+        <div class="list">
+            <li><a href="https://github.com/Mahendra-mohane" target="_blank" id="contact-github"><i class='bx bxl-github' ></i> JRaghu842</a></li>
+            <li><a href="https://www.linkedin.com/in/mahendra-mohane/" target="_blank" id="contact-linkedin"> <i class='bx bxl-linkedin' ></i>Mahendra</a></li>
+            <li><a href="mailto:itsmahendramohane11@gmail.com"  id="contact-email"> <i class='bx bxl-gmail' ></i>itsmahendramohane11@gmail.com</a></li>
+            <li><a href="tel:9630806228" id="contact-phone"> <i class='bx bxs-phone-call' ></i>+91 9630806228</a></li>
+        </div>
+    </div>
+
+    <div class="contact-form">
+            <form action="">
+                <input type="name" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email Address" required>
+                <input type="" placeholder="Your Mobile Number" required>
+                <textarea name="" id="" cols="35" rows="10" placeholder="How Can I Help You"></textarea>
+                <input type="submit" value="Send Message" class="submit" required>
+            </form>
+    </div>
+  </section>
+
+  <!-- end section -->
+  <section class="end">
+    <div class="last-text">
+        <p>Copyright © 2023 by Mahendra Mohane All Rights Reserved.</p>
+    </div>
+    <div class="top">
+        <a href="#home"> <i class='bx bx-up-arrow-alt'></i></a>
+    </div>
+
+  </section>
+
 </body>
-
 </html>
-<script src="./index.js"></script>
+
+<script src="index.js"></script>
