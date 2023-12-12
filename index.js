@@ -19,13 +19,16 @@ GitHubCalendar(".calendar", "Mahendra-mohane", {
 
 document.getElementById("resume-link-1").onclick = () => {
   window.open(
-    "https://drive.google.com/file/d/1PygiTl_pNZV9hhyXPc9YOAz_5QkBzRLm/view?usp=sharing"
+    "https://drive.google.com/file/d/1o3KTnZwOaZ5AlZ8wBkKBqifjuFuMgyoy/view?usp=sharing"
+    
   );
 };
 
 
 document.getElementById("resume-link-2").onclick = () => {
   window.open(
-    "https://drive.google.com/file/d/1PygiTl_pNZV9hhyXPc9YOAz_5QkBzRLm/view"
+    "https://drive.google.com/file/d/1o3KTnZwOaZ5AlZ8wBkKBqifjuFuMgyoy/view?usp=sharing"
+    // "https://drive.google.com/file/d/1PygiTl_pNZV9hhyXPc9YOAz_5QkBzRLm/view"
+    
   );
 };
